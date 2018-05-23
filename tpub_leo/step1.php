@@ -4,7 +4,7 @@ session_start();
 if(isset($_POST['submit'])){
 
     //CHECK SI VIDE 
-    if (empty($_POST['nom_Campagne']) && empty($_POST['geneve']) && empty($_POST['lausanne']) && empty($_POST['france'])) 
+    if (empty($_POST['nom_Campagne']) or empty($_POST['geneve']) and empty($_POST['lausanne']) and empty($_POST['france'])) 
     {
     	header('location: step1.php');
     }
